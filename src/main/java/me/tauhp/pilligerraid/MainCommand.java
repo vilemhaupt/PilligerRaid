@@ -15,15 +15,9 @@ public class MainCommand implements CommandExecutor {
     public static ArrayList<UUID> enabled = new ArrayList<>();
     private final Main plugin;
 
-
-
     public  MainCommand(Main plugin){
         this.plugin = plugin;
     }
-
-
-
-
 
 
     @Override
@@ -36,7 +30,6 @@ public class MainCommand implements CommandExecutor {
                 if (args[0].equalsIgnoreCase("reload")){
 
                     if (sender.hasPermission("raider.reload")){
-
 
                         plugin.saveConfig();
                         plugin.reloadConfig();
@@ -71,10 +64,7 @@ public class MainCommand implements CommandExecutor {
 
         }
 
-
         return false;
-
-
 
     }
 }

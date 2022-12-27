@@ -17,14 +17,10 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
 
-
-
         // Plugin startup logic
         System.out.println("Plugin VilliageRaider has been enabled");
         this.saveDefaultConfig();
         this.getCommand("raider").setExecutor((CommandExecutor) new MainCommand(this));
-
-
 
         int interval = getConfig().getInt("raidtimeout"); // Read interval from config in default is 1 minute
 
@@ -32,7 +28,6 @@ public final class Main extends JavaPlugin {
         Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
 
             public void run(){
-
 
                 for (UUID player : MainCommand.enabled){
 
@@ -47,8 +42,6 @@ public final class Main extends JavaPlugin {
                     World world = Bukkit.getWorld("world");
 
                     Location location = new Location(world, Px, Py, Pz);
-
-
 
                     for (int i = 0; i < getConfig().getInt("raidamout"); i++){
 
@@ -69,10 +62,6 @@ public final class Main extends JavaPlugin {
 
                 }
 
-
-
-
-
             }
 
         }, 0, interval);
@@ -84,7 +73,5 @@ public final class Main extends JavaPlugin {
         // Plugin shutdown logic
         System.out.println("Plugin VilliageRaider has been disabled");
     }
-
-
 
 }
