@@ -20,7 +20,7 @@ public final class Main extends JavaPlugin {
 
 
         // Plugin startup logic
-        System.out.println("Plugin raider has been enabled");
+        System.out.println("Plugin VilliageRaider has been enabled");
         this.saveDefaultConfig();
         this.getCommand("raider").setExecutor((CommandExecutor) new MainCommand(this));
 
@@ -82,7 +82,7 @@ public final class Main extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        System.out.println("Plugin raider has been disabled");
+        System.out.println("Plugin VilliageRaider has been disabled");
     }
 
 
