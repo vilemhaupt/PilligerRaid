@@ -1,0 +1,9 @@
+name: PilligerRaid
+version: '${project.version}'
+main: me.tauhp.pilligerraid.Main
+api-version: 1.18
+authors: [ Tauhp ]
+description: Simple event plugin
+commands:
+  raider:
+    description: Main plugin command

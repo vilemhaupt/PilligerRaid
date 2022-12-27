@@ -1,0 +1,12 @@
+# At messages you can use & coloring codes
+
+raidtimeout: 1200 # Raid will be every 1 minute (In ticks)
+raidamout: 10
+raidstart_message: "Raid has been enabled"
+reload_message: "Plugin has been reloaded"
+noperms_message: "You dont have permission to do this (raider.reload)"
+added_message: "Sucessfully added to event list"
+removed_message: "Sucessfully removed from event list"
+# Randomizer spawn
+x: 10 # Max. distance difference
+z: 10 # Max. distance difference
